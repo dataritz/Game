@@ -59,8 +59,14 @@
 
 
 
-<body>
+<body onload = "thoughtofday()">
     <script>
+        function thoughtofday(){
+            th = ['Courage to continue matters more than success or failure.','You decide who you become.','Create your own future; don’t just predict it.','Success requires work, not just words.','Success comes to the busy, not the idle.','Get ahead by taking the first step.','The only failure is not trying.','True failure lies in never attempting.','To achieve greatness, stop seeking permission and start taking action.','The key to progress is taking the initial step, not waiting for the perfect moment.']
+            var x = Math.random();
+            x = Math.floor(x * 10)
+            alert(x)
+        }
         function diceG() {
             var x = Math.random();
             x = Math.floor(x * 6) + 1;
